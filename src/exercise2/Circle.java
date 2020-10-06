@@ -9,7 +9,7 @@ public class Circle {
 
         System.out.print("Enter r: ");
         double r = input.nextDouble();
-        double c = 2*Math.PI*1;
+        double c = 2*Math.PI*r;
         double a = Math.PI*(r*r);
 
         System.out.println("Circumference: " + c);
