@@ -9,7 +9,7 @@ public class QuadraticEquation {
         Scanner inputb = new Scanner(System.in);
         Scanner inputc = new Scanner(System.in);
 
-        System.out.print("Enter a, b and c: ");
+        //System.out.print("Enter a, b and c: ");
 
         int a = inputa.nextInt();
         int b = inputb.nextInt();
