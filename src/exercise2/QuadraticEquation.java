@@ -31,7 +31,7 @@ public class QuadraticEquation {
         }
         else if (b != 0)
         {
-          double x = -b/(2*a);
+          double x = -c/b;
           System.out.println(x);
 
         }
