@@ -19,7 +19,7 @@ public class QuadraticEquation {
         {
           int disk = (b*b)-(4*a*c);
           //System.out.println("D= " + disk);
-           if (disk>=0)
+           if (disk>0)
            {
              double wurzeldisk = Math.sqrt(disk);
              //System.out.println("D2= " + wurzeldisk);
@@ -28,11 +28,15 @@ public class QuadraticEquation {
              double x2 = (-b+wurzeldisk)/(2*a);
              System.out.println(x2);
            }
+           else if(disk==0)
+           {
+             double h = (-b/2*a);
+             System.out.println(h);
+           }
            else 
            {
              System.out.println("Imaginary values");
            }
-
         }
         else if (b != 0)
         {
