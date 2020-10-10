@@ -5,21 +5,17 @@ import java.util.Scanner;
 public class QuadraticEquation {
 
     public static void main(String[] args) {
-        Scanner inputa = new Scanner(System.in);
-        Scanner inputb = new Scanner(System.in);
-        Scanner inputc = new Scanner(System.in);
-
+        Scanner input = new Scanner(System.in);
         System.out.print("Enter a, b and c: ");
-
-        int a = inputa.nextInt();
-        int b = inputb.nextInt();
-        int c = inputc.nextInt();
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int c = input.nextInt();
 
         if (a != 0)
         {
           int disk = (b*b)-(4*a*c);
           //System.out.println("D= " + disk);
-           if (disk>0)
+           if (disk>=0)
            {
              double wurzeldisk = Math.sqrt(disk);
              //System.out.println("D2= " + wurzeldisk);
@@ -27,11 +23,6 @@ public class QuadraticEquation {
              System.out.println(x1);
              double x2 = (-b+wurzeldisk)/(2*a);
              System.out.println(x2);
-           }
-           else if(disk==0)
-           {
-             double h = (-b/2*a);
-             System.out.println(h);
            }
            else 
            {
