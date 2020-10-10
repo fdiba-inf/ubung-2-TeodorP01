@@ -29,9 +29,10 @@ public class QuadraticEquation {
              System.out.println("Imaginary values");
            }
         }
+
         else if (b != 0)
         {
-          double x = -b/2*a;
+          double x = -c/b;
           System.out.println(x);
 
         }
