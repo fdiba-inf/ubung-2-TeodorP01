@@ -1,6 +1,7 @@
 package exercise2;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class QuadraticEquation {
 
@@ -20,9 +21,8 @@ public class QuadraticEquation {
              double wurzeldisk = Math.sqrt(disk);
              //System.out.println("D2= " + wurzeldisk);
              double x1 = (-b-wurzeldisk)/(2*a);
-             System.out.println(x1);
              double x2 = (-b+wurzeldisk)/(2*a);
-             System.out.println(x2);
+             System.out.println(x1 + ", " + x2 );
            }
            else 
            {
