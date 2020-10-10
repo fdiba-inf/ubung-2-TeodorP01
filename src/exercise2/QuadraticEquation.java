@@ -9,7 +9,7 @@ public class QuadraticEquation {
         Scanner inputb = new Scanner(System.in);
         Scanner inputc = new Scanner(System.in);
 
-        //System.out.print("Enter a, b and c: ");
+        System.out.print("Enter a, b and c: ");
 
         int a = inputa.nextInt();
         int b = inputb.nextInt();
@@ -19,7 +19,7 @@ public class QuadraticEquation {
         {
           int disk = (b*b)-(4*a*c);
           //System.out.println("D= " + disk);
-           if (disk>0)
+           if (disk>=0)
            {
              double wurzeldisk = Math.sqrt(disk);
              //System.out.println("D2= " + wurzeldisk);
@@ -30,10 +30,7 @@ public class QuadraticEquation {
            }
            else 
            {
-             //System.out.println("Imaginary values");
-             double xd = -b/(2*a);
-             System.out.println(xd);
-
+             System.out.println("Imaginary values");
            }
 
         }
